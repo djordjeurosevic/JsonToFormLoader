@@ -1,0 +1,20 @@
+<div class="form-container">
+  <form
+      class="form"
+      [formGroup]="baseForm">
+      <ng-container
+        *ngFor="let control of config;"
+        baseControl
+        [config]="control"
+        [group]="baseForm">
+      </ng-container>
+      <button mat-raised-button color="primary" class = "submit-btn"
+      [disabled] = "!this.baseForm.valid"> Submit </button>
+      <div class = "formState">
+        <pre>{{baseForm.value | json}}</pre>
+      </div>
+    </form>
+</div>
+      
+      
+ 

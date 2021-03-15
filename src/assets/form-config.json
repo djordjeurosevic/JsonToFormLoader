@@ -1,0 +1,81 @@
+[{
+    "key": "user_firstname",
+    "type": "text",
+    "label": "First name",
+    "required": true
+  },
+  {
+    "key": "user_lastname",
+    "type": "text",
+    "label": "Last name",
+    "required": true
+  },
+  {
+    "key": "select_country",
+    "type": "select",
+    "required": true,
+    "label": "Country of Residence",
+    "options": [{
+        "label": "Serbia",
+        "value": "serbia"
+      },
+      {
+        "label": "United States of America",
+        "value": "usa"
+      },
+      {
+        "label": "Other",
+        "value": "other"
+      }
+    ]
+  },
+
+  {
+    "key": "checkbox_multiple_field",
+    "type": "checkbox",
+    "required" : true,
+    "label": "Topics that you find interesting",
+    "options": [{
+        "label": "Sports",
+        "value": "sports"
+      },
+      {
+        "label": "Movies",
+        "value": "movies"
+      },
+      {
+        "label": "Music",
+        "value": "music"
+      },
+      {
+        "label": "Television",
+        "value": "television"
+      }
+    ]
+  },
+  {
+    "key": "radio_accounttype",
+    "type": "radio",
+    "required": true,
+    "label": "Select your account type",
+    "options": [{
+        "label": "Free",
+        "value": "free"
+      },
+      {
+        "label": "Premium",
+        "value": "premium"
+      },
+      {
+        "label": "Premium+",
+        "value": "premiumplus"
+      }
+    ]
+  }, 
+  {
+    "key": "checkbox_newsletter",
+    "type": "checkbox",
+    "required" : true,
+    "label": "I want to subscribe to your newsletter"
+  }
+]
